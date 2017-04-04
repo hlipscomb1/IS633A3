@@ -25,11 +25,11 @@ p {
   color: #333;
 }
 
-#footer {
+footer {
   font-family: helvetica neue;
   font-size: 10px;
   font-weight: 800;
-  position: relative;
+  position: absolute;
   text-align: center;
   padding-top: 10px;
   color: black;
