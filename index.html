@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment #2</title>
+    <script src="js/a3.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/a3.css" />
+</head>
+
+<body>
+<h1>Assignment #2 Hakeem Lipscomb</h1>
+<hr>
+    <section id="options">
+    <select onchange="ShowMenu(value);" id="menu">
+        <option value="none">Please select an option from the list</option>
+        <option value="first">Get All Customers</option>
+        <option value="second">Customer's Order History</option>
+        <option value="third">Current Orders</option>
+        <option value="fourth">Update Order Information</option>
+        <option value="fifth">About Information</option>
+    </select>
+    </section>
+    <hr>
+    <section id="first" class="first">
+    <p id="customerDisplay"></p>
+</section>
+<section id="second" class="second">
+    <h2>Order History</h2>
+    <label id="custid">Please enter a Customer ID</label>
+    <input type="text" id="custidinput">
+    <br>
+    <br>
+    <button onclick="getOrders();" id="orders">Get Customer Orders</button>
+    <button id='back' onClick="goBack();";>Back</button>
+    <br>
+    <br>
+    <label id="orderDisplay"></label>
+</section>
+<section id="third" class="third">
+    <h2>Current Orders</h2>
+    <br>
+    <label id="custid2">Please enter a Customer ID</label>
+    <input type="text" id="custidinput2">
+    <br>
+    <br>
+    <button onclick="getCurrent();" id="orders">Get Customer Current Orders</button>
+    <button id='back' onClick="goBack();">Go Back to Customer List</button>
+    <br>
+    <br>
+    <label id="currentorderDisplay"></label>
+</section>
+<section id="fourth" class="fourth">
+    <h2>Update Order</h2>
+    <label id="ordid">Please enter a Order ID</label>
+    <input type="text" id="orderid" disabled="true"> 
+    <br>
+    <label id="ordid">Please enter a New Shipping Address</label>
+    <input type="text" id="shipaddress">
+    <br>
+    <label id="ordid">Please enter a New Ship City</label>
+    <input type="text" id="shipcity">
+    <br>
+    <label id="ordid">Please enter a New Ship Name</label>
+    <input type="text" id="shipname">
+    <br>
+    <label id="ordid">Please enter a New Postal Code</label>
+    <input type="text" id="postalinput">
+    <br>
+    <br>
+    <button id='back' onClick="goBack();">Go Back to Customer List</button>
+    <button id='modify' onclick="Update();">Update Order</button>
+    <br>
+    <br>
+    <label id="historyDisplay"></label>
+<section id="fifth" class="fifth">
+        <h1>About Information:</h1>
+        <h2>Hakeem J. Lipscomb</h2>
+        <p>This app is designed to allow the display of Customer Information and to show a Customer's Order History. The app is only intened for this use, any other purpose is UNAUTHORIZED.</p>
+</section>
+
+</body>
+<div id="footer">
+    <h2>Hakeem J. Lipscomb
+    </h2>Contact Me: <a href="mailto:hjl0003@uab.edu">hjl0003@uab.edu</a>
+</div>
+</html>
